@@ -300,6 +300,14 @@ export default function Landing() {
           </button>
         </div>
 
+        {loading && (
+          <div className="animate-fade-in" style={{ marginTop: 24, textAlign: 'center', fontSize: 13, color: 'var(--text-muted)' }}>
+            <span style={{ color: 'var(--orange)', marginRight: 6 }}>ℹ</span>
+            <strong>Note:</strong> We use a free Render server for our backend. <br />
+            If it was asleep, waking it up may take up to <strong>50 seconds</strong>. Please be patient!
+          </div>
+        )}
+
         {/* How it works */}
         <div style={{ maxWidth: 960, margin: '64px auto 0' }}>
           <div style={{ textAlign: 'center', marginBottom: 32 }}>
